@@ -1,0 +1,50 @@
+<HTML>
+<HEAD>
+<TITLE>Digital Signal Processing Tools</TITLE>
+</HEAD>
+<BODY>
+
+<H1>Fourier Series Tool</H1>
+
+<SCRIPT TYPE = "text/javascript">
+<!--
+
+ function printToolMarkUp(className, textName, fileName) {
+  var isMac = (navigator.userAgent.indexOf("Mac") != -1);
+  var isNetscape = ("Netscape" == navigator.appName);
+  if (isMac && isNetscape) {
+    var macAppletCode = "<EMBED \
+      TYPE = application/x-java-vm \
+      NAME = 'TOOL' \
+      PLUGINSPAGE = http://www.mozilla.org/oji/ \
+      ARCHIVE = dsp.jar \
+      CODE = appletbutton.AppletButton \
+      WIDTH = 230 \
+      HEIGHT = 26 \
+      file = ";
+    var macAppletCode2 = " class = ";
+    var macAppletCode3 = " text = ";
+    document.write(macAppletCode + fileName +
+                   macAppletCode2 + className +
+                   macAppletCode3 + textName + ">");
+  } else {
+    var openAppletCode = "<APPLET ARCHIVE = dsp.jar CODE = appletbutton.AppletButton width=230 height=26>";
+    var classParam = "<PARAM NAME = class VALUE = ";
+    var textParam = "<PARAM NAME = text VALUE = ";
+    var fileParam = "<PARAM NAME = file VALUE = ";
+    var closeAppletCode = "</APPLET>";
+    document.write(openAppletCode);
+    document.write(classParam + className + ">");
+    document.write(textParam + textName + ">")
+    document.write(fileParam + fileName + ">")
+    document.write(closeAppletCode);
+  }
+}
+    printToolMarkUp("seriestool.SeriesTool",
+                    "\'Fourier Series Tool\'",
+                    "SetupFiles/setupFS.dsp");
+//-->
+</SCRIPT>
+
+</BODY>
+</HTML>

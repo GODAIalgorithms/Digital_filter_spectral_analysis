@@ -1,0 +1,56 @@
+
+MENUS:
+
+Various:
+        Colours: 
+                Choose the colours used in the tool.
+        Quit: 
+                Exit the tool.
+
+Signal: 
+        Choose a signal and view its trigonometric or complex Fourier 
+        series
+
+BUTTONS:
+
+Play Signal (icon):
+        Hear an audio rendition of the signal.
+
+Trig:
+Complex:
+        Toggle between viewing the A and B coefficients of the
+        trigonometric Fourier series and the magnitude and phase
+        components of the complex Fourier series
+
+Synthesise:
+        Display the complete synthesis of a signal from the current
+        Fourier series
+
+Randomise:
+        Set the Fourier coefficients to random values.
+
+Zero:
+        Set the Fourier coefficients to zero values.
+
+SLIDER:
+
+        Control the speed of the animation of the summation of a
+        harmonic to a partially synthesised signal.
+
+GRAPHS:
+
+Pressing the g or G key on the graphs toggles on and off the
+grid-lines.
+
+Moving the mouse over the Fourier series graphs displays the values of 
+each Fourier coefficient. A tic-mark shows the value of the sample
+over which the mouse lies.
+
+Clicking and dragging the mouse on the Fourier series graphs changes
+the Fourier series coefficient values. A tic-mark shows the value of
+the sample over which the mouse lies. The signal graph will
+dynamically update to reflect these changes when the mouse button is
+released. Alternatively, pressing '0' will zero the Fourier
+coefficient value, pressing the up-arrow key increases the
+coefficient's value and pressing the down-arrow key decreases the 
+coefficient's value.
